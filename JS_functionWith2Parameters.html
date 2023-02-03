@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>javascript example 2</title>
+    <script>
+        function myDetail(name, age){
+            if(name =="" || age == "")
+            return;
+            document.write("my name is "+name+"and my age is "+age)
+        }
+        function MouseOver() {
+            document.images["img"].src= "red.png"
+        }
+        function MouseOut() {
+            document.images["img"].src= "green.png"
+        }
+        function Load() {
+            document.images["img"].src= "blue.png"
+        }
+    </script>
+</head>
+<body onload="Load()">
+    <p>Click the following button to call the function</p>
+    <form>
+    <input name="t1" placeholder="Enter Name" /><br/>
+    <input name="t2" placeholder="Enter age" /><br/>
+    <input type="button" onclick="myDetail(t1.value, t2.value)"> 
+    </form>
+    <img name="img" onmouseover="MouseOver()" onmouseout="MouseOut()">
+  
+</body>
+</html>

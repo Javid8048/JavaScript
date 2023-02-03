@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function myfirst() {
+            myDisplayer("Hello");
+        }
+        function mySecond() {
+            myDisplayer("GoodBye");
+        }
+        function myDisplayer(some) {
+            document.getElementById("demo").innerHTML=some;
+        }
+        myfirst();
+        mySecond();
+    </script>
+</body>
+</html>

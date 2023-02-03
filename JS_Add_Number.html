@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Numbers</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function myAdd(some) {
+            document.getElementById("demo").innerHTML=some;
+        }
+        function myDisplayer(num1, num2) {
+            let sum=num1+num2;
+            return sum;
+        }
+
+        let result = myDisplayer(5, 15);
+        myAdd(result);
+    </script>
+</body>
+</html>
