@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disco Dance</title>
+</head>
+<body bgcolor="white">
+    <script>
+        colors = new Array('red', 'orange', 'green', 'blue', 'brown', 'purple', 'gray');
+        colorIndex=0;
+        function changeColor() {
+            document.bgColor=colors[colorIndex];
+            colorIndex=(colorIndex+1)%colors.length;
+        }
+        function startColorChange() {
+            setInterval('changeColor()',1000);
+        }
+        onload=startColorChange();
+    </script>
+    <h1>Change Background Color </h1>
+    <p> The <code>setInterval()</code> method is used to repeatly Change</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeOut function</title>
+</head>
+<body>
+    <script language="JavaScript">
+        function setTimer() {
+            timer=setTimeout("alert('Too slow!')",10000)
+        }
+        function clearTimer() {
+            clearTimeout(timer) 
+            alert("Congratulations")
+        }
+        setTimer()
+    </script>
+    <form>
+        <input type="button" value="click here within 10 seconds." onclick="clearTimer()">
+    </form>
+</body>
+</html>

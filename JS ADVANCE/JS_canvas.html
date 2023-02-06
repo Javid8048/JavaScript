@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" style="border: 1px solid gray; height: auto; width: auto;"></canvas>
+    <script>
+        const canvas=document.getElementById("myCanvas");
+        const ctx=canvas.getContext("2d");
+        canvas.height=canvas.width;
+        ctx.transform(1,0,0,-1,0, canvas.height)
+
+        const xArray=[10, 23, 39, 26, 5, 65, 76, 76, 43, 2,44, 100];
+        const yArray=[2, 3, 4, 5, 6, 7, 8,9, 10, 11, 12, 13];
+
+        ctx.fillStyle="black";
+        for(let i=0; i<xArray.length-1, i++) {
+            let x=xArray[i]*400/150;
+            let y=yArray[i]*400/15;
+            ctx.beginPath();
+            ctx.ellipse(x, y, 3, 0, 0, Math.PI*2);
+            ctx.fill();
+        }
+
+    </script>
+
+
+</body>
+</html>

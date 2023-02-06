@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Seconds Count</title>
+    <style>
+        h1 {
+            text-align: center;
+            align-items: center;
+        }
+        body {
+            background-color: aqua;
+            width: 50px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div>
+            <h1 id="countdown">10</h1>
+
+        </div>
+    </header>
+    <script>
+       
+       var countdownElement = document.getElementById('countdown');
+       
+       var initialCountdownVal = countdownElement.innerHTML;
+       
+       setInterval(function() {
+        initialCountdownVal=initialCountdownVal> 0 ?initialCountdownVal - 1:
+        countdownElement.innerHTML=initialCountdownVal;
+        countdownElement.style.fontSize = "500px"
+       }, 1000); 
+    </script>
+</body>
+</html>
